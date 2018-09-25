@@ -1,7 +1,7 @@
 /*=============================================
- * Swordsfall - A theme for Swordsfall by Tikal. 
- * Based on Galaxy Anvil
- * Version 0.1
+ * SWORDSFALL THEME - A theme for SWORDSFALL by Tikal. 
+ * Based on the theme Galaxy Anvil
+ * Version 1.0
  =============================================*/
 
 /*=============================================
@@ -283,6 +283,7 @@
     border-radius: 5px;
     padding: 0;
     margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.23), 1px 0px 10px 0 rgba(0, 0, 0, 0.10);
 }
 
 .user-css-presentation .user-css .user-css-presentation .user-css-image-thumbnail img,
@@ -504,6 +505,7 @@
     border-radius: 5px;
     padding: 0;
     margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .user-css-presentation .user-css .map-box img {
@@ -628,12 +630,18 @@
     margin-right: auto;
 }
 
-/* LAYOUT - CUSTOM CLASSES */
+/*=============================================
+=            LAYOUT - CUSTOM CLASSES            =
+=============================================*/
+
+/*----------  BLOCK  ----------*/
 
 .user-css-presentation .user-css .block,
 .user-css-presentation .user-css-extended .block {
     display: block;
 }
+
+/*----------  GLOSSARY BLOCK  ----------*/
 
 .user-css-presentation .user-css .glossary-block,
 .user-css-presentation .user-css-extended .glossary-block {
@@ -643,6 +651,8 @@
     margin-right: -7.5px;
     text-align: center;
 }
+
+/*----------  GLOSSARY BLOCK ARTICLE PANEL  ----------*/
 
 .user-css-presentation .user-css .glossary-block .article-panel,
 .user-css-presentation .user-css-extended .glossary-block .article-panel {
@@ -657,11 +667,30 @@
     height: 100%;
 }
 
+/*----------  GLOSSARY BLOCK ARTICLE COVER  ----------*/
+
 .user-css-presentation .user-css .glossary-block .article-panel .cover,
 .user-css-presentation .user-css-extended .glossary-block .article-panel .cover {
     /* display: none; */
     min-height: 100px;
 }
+
+
+/*----------  RPG Panel  ----------*/
+
+.user-css-presentation .user-css .rpgpanel {
+    background: var(--primary3Transparent);
+    border: 1px;
+    box-shadow: 4px 4px 7px 0 rgba(0, 0, 0, 0.3), 4px 7px 20px 0 rgba(0, 0, 0, 0.22);
+}
+
+/*=====  End of RPG Panel  ======*/
+
+/*=====  End of END OF LAYOUT - CUSTOM CLASSES  ======*/
+
+/*=============================================
+=            BORDER GROUP            =
+=============================================*/
 
 .user-css-presentation .user-css .row-border-group .user-row {
     display: flex;
@@ -879,6 +908,8 @@
 .user-css-presentation .user-css .row-border-group .user-row:only-child .col-md-4:last-child:before {
     display: none;
 }
+
+/*=====  End of END OF BORDER GROUP  ======*/
 
 /*=============================================
 =            THEME APPLICATION            =
