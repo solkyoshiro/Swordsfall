@@ -22,7 +22,7 @@
 
 /*=============================================
  * Based on the theme Galaxy Anvil
- * Version 1.2
+ * Version 1.3
  =============================================*/
 
 /*=============================================
@@ -299,8 +299,8 @@
     text-transform: uppercase;
     padding-bottom: 1.4px;
     margin-top: 15px;
-    margin-bottom: 2px;
-    border-bottom: 1px solid;
+    margin-bottom: 6px;
+    border-bottom: 1.5px solid;
 }
 
 .user-css-presentation .user-css h4,
@@ -791,7 +791,7 @@
     line-height: 1.07em;
     color: #B7ABA8;
     text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.78);
-    background: var(--accent2Transparent);
+    background: var(--primary6Transparent);
 }
 
 .user-css-presentation .user-css .pquoteright,
@@ -799,7 +799,7 @@
     margin: 0px 0px 12px 18px;
     text-align: right;
     float: right;
-    border-left: 10px solid maroon;
+    border-left: 13px solid var(--accent8);
     -webkit-animation: scale-in-hor-left 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: scale-in-hor-left 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -809,7 +809,7 @@
     margin: 0px 18px 12px 0px;
     text-align: left;
     float: left;
-    border-right: 10px solid maroon;
+    border-right: 13px solid var(--accent8);
     -webkit-animation: scale-in-hor-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: scale-in-hor-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -1089,7 +1089,7 @@
 .user-css-presentation .user-css-extended h1,
 .user-css-presentation .user-css h1 a {
     color: var(--primaryA);
-    background: linear-gradient(var(--defaultA), var(--accentA), var(--primaryA));
+    background: linear-gradient(var(--accentD), var(--default9), var(--accent4));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1097,26 +1097,26 @@
 .user-css-presentation .user-css h1 small,
 .user-css-presentation .user-css-extended h1 small,
 .user-css-presentation .user-css h1 a small {
-    color: var(--primary8);
-    background: linear-gradient(var(--default8), var(--accent8), var(--primary8));
+    color: var(--primprimaryAary8);
+    background: linear-gradient(var(--accentD), var(--default9), var(--accent4));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .user-css-presentation .user-css h4.article-subheading {
-    background: linear-gradient(var(--default8), var(--accent8), var(--primary8));
+    background: linear-gradient(var(--accent3), var(--default9Muted), var(--accentD));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .user-css-presentation .user-css h2,
 .user-css-presentation .user-css-extended h2 {
-    color: var(--primaryA);
+    color: var(--primary5Muted);
 }
 
 .user-css-presentation .user-css h2 small,
 .user-css-presentation .user-css-extended h2 small {
-    color: var(--primary8);
+    color: var(--primary5Muted);
 }
 
 .user-css-presentation .user-css h3,
@@ -1126,22 +1126,22 @@
 
 .user-css-presentation .user-css h3 small,
 .user-css-presentation .user-css-extended h3 small {
-    color: var(--midPrimaryAccent8);
+    color: var(--primary5Muted);
 }
 
 .user-css-presentation .user-css h4,
 .user-css-presentation .user-css-extended h4 {
-    color: var(--accentA);
+    color: var(--midPrimaryAccentA);
 }
 
 .user-css-presentation .user-css h4 small,
 .user-css-presentation .user-css-extended h4 small {
-    color: var(--accent8);
+    color: var(--midPrimaryAccentA);
 }
 
 .user-css-presentation .user-css h5,
 .user-css-presentation .user-css-extended h5 {
-    color: var(--midDefaultAccentA);
+    color: var(--midPrimaryAccentA);
 }
 
 .user-css-presentation .user-css h5 small,
@@ -1173,7 +1173,7 @@
 .user-css-presentation .user-css-extended a:focus,
 .user-css-presentation .user-css .text-abbreviation,
 .user-css-presentation .user-css-extended .text-abbreviation {
-    color: var(--primaryD);
+    color: var(--accentB);
 }
 
 .user-css-presentation .user-css a:hover,
@@ -1202,8 +1202,8 @@
 .user-css-presentation .user-css-extended blockquote,
 .user-css-presentation .user-css-worldmenu blockquote {
     background: var(--primary3Transparent);
-    border-color: var(--primaryDTransparent);
-    color: var(--primaryDMuted);
+    border-color: var(--primary1Muted);
+    color: var(--default7Muted);
     box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
@@ -1277,17 +1277,17 @@
 
 .user-css-presentation .user-css .article-panel,
 .user-css-presentation .user-css-extended .article-panel {
-    background-color: var(--accent3Transparent);
+    background-color: var(--accent4Transparent);
 }
 
 .user-css-presentation .user-css .article-panel .details .heading,
 .user-css-presentation .user-css-extended .article-panel .details .heading {
-    color: var(--primaryC);
+    color: var(--primaryCMuted);
 }
 
 .user-css-presentation .user-css .article-panel .details .subheading,
 .user-css-presentation .user-css-extended .article-panel .details .subheading {
-    color: var(--primary8);
+    color: var(--primaryAMuted);
 }
 
 .user-css-presentation .user-css .article-panel .details .subheading .date,
@@ -1319,13 +1319,13 @@
 =============================================*/
 
 .user-css-presentation .user-css .breadcrumb {
-    background: var(--accent3Transparent);
+    background: var(--primary5Transparent);
     color: var(--accentAMuted);
     box-shadow: 0 0 2px 2px var(--accentDTransparent);
 }
 
 .user-css-presentation .user-css .breadcrumb li .active {
-    color: var(--accentA);
+    color: var(--accent1Muted);
 }
 
 /* BUTTONS */
@@ -1556,7 +1556,7 @@
 
 .user-css-presentation .user-css .panel-default,
 .user-css-presentation .user-css-extended .panel-default {
-    background-color: var(--accent3Transparent);
+    background-color: var(--default1Transparent);
     border-color: var(--accentDTransparent);
     color: var(--accentDMuted);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -2298,145 +2298,145 @@
 
 .user-css-presentation .user-css,
 .user-css-presentation .user-css-extended {
-    /* Default Color: Yellow-Green (Hue 65) */
-    --default1: #1D1E0F;
-    --default2: #2F3020;
-    --default3: #414233;
-    --default4: #505142;
-    --default5: #626354;
-    --default6: #747566;
-    --default7: #838476;
-    --default8: #959687;
-    --default9: #A7A899;
-    --defaultA: #B6B7A8;
-    --defaultB: #C8C9BB;
-    --defaultC: #DADBCB;
-    --defaultD: #E9EADC;
-    --defaultE: #FBFCED;
-    --default1Muted: #1D1E0F;
-    --default2Muted: #2F3020;
-    --default3Muted: #414233;
-    --default4Muted: #505142;
-    --default5Muted: #626354;
-    --default6Muted: #747566;
-    --default7Muted: #838476;
-    --default8Muted: #959687;
-    --default9Muted: #A7A899;
-    --defaultAMuted: #B6B7A8;
-    --defaultBMuted: #C8C9BB;
-    --defaultCMuted: #DADBCB;
-    --defaultDMuted: #E9EADC;
-    --defaultEMuted: #FBFCED;
-    --default1Transparent: rgba(29, 30, 15, 0.5);
-    --default2Transparent: rgba(47, 48, 32, 0.5);
-    --default3Transparent: rgba(65, 66, 51, 0.5);
-    --default4Transparent: rgba(80, 81, 66, 0.5);
-    --default5Transparent: rgba(98, 99, 84, 0.5);
-    --default6Transparent: rgba(116, 117, 102, 0.5);
-    --default7Transparent: rgba(131, 132, 118, 0.5);
-    --default8Transparent: rgba(149, 150, 135, 0.5);
-    --default9Transparent: rgba(167, 168, 153, 0.5);
-    --defaultATransparent: rgba(182, 183, 168, 0.5);
-    --defaultBTransparent: rgba(200, 201, 187, 0.5);
-    --defaultCTransparent: rgba(218, 219, 203, 0.5);
-    --defaultDTransparent: rgba(233, 234, 220, 0.5);
-    --defaultETransparent: rgba(251, 252, 237, 0.5);
-    /* Primary Color: Red-Orange (Hue 10, Sat 100) */
-    --primary1: #1C0500;
-    --primary2: #2D0800;
-    --primary3: #3F0700;
-    --primary4: #4F0900;
-    --primary5: #601300;
-    --primary6: #720D00;
-    --primary7: #821100;
-    --primary8: #931100;
-    --primary9: #A51300;
-    --primaryA: #B52100;
-    --primaryB: #C61A00;
-    --primaryC: #D82700;
-    --primaryD: #E52200;
-    --primaryE: #F91D00;
-    --primary1Muted: #1E120F;
-    --primary2Muted: #302320;
-    --primary3Muted: #423533;
-    --primary4Muted: #514442;
-    --primary5Muted: #635754;
-    --primary6Muted: #756866;
-    --primary7Muted: #847876;
-    --primary8Muted: #968987;
-    --primary9Muted: #A89B99;
-    --primaryAMuted: #B7ABA8;
-    --primaryBMuted: #C9BDBB;
-    --primaryCMuted: #DBCECB;
-    --primaryDMuted: #E8DEDC;
-    --primaryEMuted: #FCEFED;
-    --primary1Transparent: rgba(28, 5, 0, 0.5);
-    --primary2Transparent: rgba(45, 8, 0, 0.5);
-    --primary3Transparent: rgba(63, 7, 0, 0.5);
-    --primary4Transparent: rgba(79, 9, 0, 0.5);
-    --primary5Transparent: rgba(96, 19, 0, 0.5);
-    --primary6Transparent: rgba(114, 13, 0, 0.5);
-    --primary7Transparent: rgba(130, 17, 0, 0.5);
-    --primary8Transparent: rgba(147, 17, 0, 0.5);
-    --primary9Transparent: rgba(165, 19, 0, 0.5);
-    --primaryATransparent: rgba(181, 33, 0, 0.5);
-    --primaryBTransparent: rgba(198, 26, 0, 0.5);
-    --primaryCTransparent: rgba(219, 39, 0, 0.5);
-    --primaryDTransparent: rgba(229, 34, 0, 0.5);
-    --primaryETransparent: rgba(249, 29, 0, 0.5);
-    /* Accent Color: Teal (Hue 186) */
-    --accent1: #0F1D1E;
-    --accent2: #202F30;
-    --accent3: #334142;
-    --accent4: #425051;
-    --accent5: #546263;
-    --accent6: #667475;
-    --accent7: #768384;
-    --accent8: #879596;
-    --accent9: #99A7A8;
-    --accentA: #A8B6B7;
-    --accentB: #BBC8C9;
-    --accentC: #CBDADB;
-    --accentD: #DCE9EA;
-    --accentE: #EDFBFC;
-    --accent1Muted: #0F1D1E;
-    --accent2Muted: #202F30;
-    --accent3Muted: #334142;
-    --accent4Muted: #425051;
-    --accent5Muted: #546263;
-    --accent6Muted: #667475;
-    --accent7Muted: #768384;
-    --accent8Muted: #879596;
-    --accent9Muted: #99A7A8;
-    --accentAMuted: #A8B6B7;
-    --accentBMuted: #BBC8C9;
-    --accentCMuted: #CBDADB;
-    --accentDMuted: #DCE9EA;
-    --accentEMuted: #EDFBFC;
-    --accent1Transparent: rgba(15, 29, 30, 0.5);
-    --accent2Transparent: rgba(32, 47, 48, 0.5);
-    --accent3Transparent: rgba(51, 65, 66, 0.5);
-    --accent4Transparent: rgba(66, 80, 81, 0.5);
-    --accent5Transparent: rgba(84, 98, 99, 0.5);
-    --accent6Transparent: rgba(102, 116, 117, 0.5);
-    --accent7Transparent: rgba(118, 131, 132, 0.5);
-    --accent8Transparent: rgba(135, 149, 150, 0.5);
-    --accent9Transparent: rgba(153, 167, 168, 0.5);
-    --accentATransparent: rgba(168, 182, 183, 0.5);
-    --accentBTransparent: rgba(187, 200, 201, 0.5);
-    --accentCTransparent: rgba(203, 218, 219, 0.5);
-    --accentDTransparent: rgba(220, 233, 234, 0.5);
-    --accentETransparent: rgba(237, 251, 252, 0.5);
+    /* Default Color: Light  Lavenderish (A7959F) */
+    --default1: #151314;
+    --default2: #242022;
+    --default3: #332D30;
+    --default4: #3D363A;
+    --default5: #473F43;
+    --default6: #50484C;
+    --default7: #5A5056;
+    --default8: #64595F;
+    --default9: #6E6269;
+    --defaultA: #786B72;
+    --defaultB: #82737B;
+    --defaultC: #8B7C85;
+    --defaultD: #95858E;
+    --defaultE: #9F8E97;
+    --default1Muted: #A7959F;
+    --default2Muted: #AC9CA5;
+    --default3Muted: #B4A6AE;
+    --default4Muted: #BAACB4;
+    --default5Muted: #BFB3BA;
+    --default6Muted: #C5B9C0;
+    --default7Muted: #CAC0C6;
+    --default8Muted: #D0C6CC;
+    --default9Muted: #D5CDD1;
+    --defaultAMuted: #DBD3D7;
+    --defaultBMuted: #E0DADD;
+    --defaultCMuted: #E8E4E6;
+    --defaultDMuted: #EEEAEC;
+    --defaultEMuted: #F9F7F8;
+    --default1Transparent: rgba(21, 19, 20, 0.5);
+    --default2Transparent: rgba(36, 32, 34, 0.5);
+    --default3Transparent: rgba(51, 45, 48, 0.5);
+    --default4Transparent: rgba(51, 45, 48, 0.5);
+    --default5Transparent: rgba(71, 63, 67, 0.5);
+    --default6Transparent: rgba(80, 72, 76, 0.5);
+    --default7Transparent: rgba(90, 80, 86, 0.5);
+    --default8Transparent: rgba(100, 89, 95, 0.5);
+    --default9Transparent: rgba(110, 98, 105, 0.5);
+    --defaultATransparent: rgba(120, 107, 114), 0.5;
+    --defaultBTransparent: rgba(130, 115, 123, 0.5);
+    --defaultCTransparent: rgba(139, 124, 133, 0.5);
+    --defaultDTransparent: rgba(149, 133, 142, 0.5);
+    --defaultETransparent: rgba(159, 142, 151, 0.5);
+    /* Primary Color: Dark Purple (#482450) */
+    --primary1: #0C060D;
+    --primary2: #0E070F;
+    --primary3: #120914;
+    --primary4: #140A16;
+    --primary5: #1F0F22;
+    --primary6: #231227;
+    --primary7: #2E1733;
+    --primary8: #301836;
+    --primary9: #321938;
+    --primaryA: #351A3A;
+    --primaryB: #391C3F;
+    --primaryC: #3D1F44;
+    --primaryD: #422149;
+    --primaryE: #46234E;
+    --primary1Muted: #4D2B55;
+    --primary2Muted: #583860;
+    --primary3Muted: #63456A;
+    --primary4Muted: #6E5275;
+    --primary5Muted: #795F7F;
+    --primary6Muted: #846C8A;
+    --primary7Muted: #8F7994;
+    --primary8Muted: #95809A;
+    --primary9Muted: #A08DA4;
+    --primaryAMuted: #AB9AAF;
+    --primaryBMuted: #B6A7B9;
+    --primaryCMuted: #C1B5C4;
+    --primaryDMuted: #D7CFD9;
+    --primaryEMuted: #EDE9EE;
+    --primary1Transparent: rgba(12, 6, 13, 0.5);
+    --primary2Transparent: rgba(14, 7, 15, 0.5);
+    --primary3Transparent: rgba(18, 9, 20, 0.5);
+    --primary4Transparent: rgba(20, 10, 22, 0.5);
+    --primary5Transparent: rgba(31, 15, 34, 0.5);
+    --primary6Transparent: rgba(35, 18, 39, 0.5);
+    --primary7Transparent: rgba(46, 23, 51, 0.5);
+    --primary8Transparent: rgba(48, 24, 54, 0.5);
+    --primary9Transparent: rgba(50, 25, 56, 0.5);
+    --primaryATransparent: rgba(53, 26, 58, 0.5);
+    --primaryBTransparent: rgba(57, 28, 63, 0.5);
+    --primaryCTransparent: rgba(61, 31, 68, 0.5);
+    --primaryDTransparent: rgba(66, 33, 73, 0.5);
+    --primaryETransparent: rgba(70, 35, 78, 0.5);
+    /* Accent Color: Light Yellow (#E5C388) */
+    --accent1: #17130E;
+    --accent2: #251F16;
+    --accent3: #393122;
+    --accent4: #4E422E;
+    --accent5: #5C4E36;
+    --accent6: #695A3F;
+    --accent7: #7E6B4B;
+    --accent8: #8C7753;
+    --accent9: #99835B;
+    --accentA: #AE9467;
+    --accentB: #BCA070;
+    --accentC: #CAAC78;
+    --accentD: #D7B780;
+    --accentE: #DEBD84;
+    --accent1Muted: #E6C58C;
+    --accent2Muted: #E7C893;
+    --accent3Muted: #E9CC9A;
+    --accent4Muted: #EAD0A1;
+    --accent5Muted: #ECD3A8;
+    --accent6Muted: #EED7AF;
+    --accent7Muted: #EFDAB6;
+    --accent8Muted: #F1DEBE;
+    --accent9Muted: #F2E2C5;
+    --accentAMuted: #F4E5CC;
+    --accentBMuted: #F5E9D3;
+    --accentCMuted: #F7ECDA;
+    --accentDMuted: #F9F0E1;
+    --accentEMuted: #FCF7F0;
+    --accent1Transparent: rgba(23, 19, 14, 0.5);
+    --accent2Transparent: rgba(37, 31, 22, 0.5);
+    --accent3Transparent: rgba(57, 49, 34, 0.5);
+    --accent4Transparent: rgba(78, 66, 46, 0.5);
+    --accent5Transparent: rgba(92, 78, 54, 0.5);
+    --accent6Transparent: rgba(105, 90, 63, 0.5);
+    --accent7Transparent: rgba(126, 107, 75, 0.5);
+    --accent8Transparent: rgba(140, 119, 83, 0.5);
+    --accent9Transparent: rgba(153, 131, 9, 0.5);
+    --accentATransparent: rgba(174, 148, 103, 0.5);
+    --accentBTransparent: rgba(188, 160, 112, 0.5);
+    --accentCTransparent: rgba(202, 172, 120, 0.5);
+    --accentDTransparent: rgba(215, 183, 128, 0.5);
+    --accentETransparent: rgba(229, 195, 136, 0.5);
     /* Specialty Colors */
-    --midPrimaryAccentA: #AF6C5C;
+    --midPrimaryAccentA: #AE9467;
     /* Used for h3 */
-    --midPrimaryAccent8: #8D534B;
+    --midPrimaryAccent8: #8C7753;
     /* Used for h3 small */
-    --midDefaultAccentA: #AFB7B0;
+    --midDefaultAccentA: #786B72;
     /* Used for h5 */
-    --midDefaultAccent8: #9FA69F;
+    --midDefaultAccent8: #64595F;
     /* Used for h5 small */
-    --defaultAFullTransparent: rgba(182, 183, 168, 0);
+    --defaultAFullTransparent: rgba(120, 107, 114, 0);
     /* Used for row border groups */
 }
 
