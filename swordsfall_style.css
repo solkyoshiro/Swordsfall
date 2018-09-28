@@ -167,9 +167,7 @@
 .user-css-presentation .user-css a,
 .user-css-presentation .user-css a:focus,
 .user-css-presentation .user-css-extended a,
-.user-css-presentation .user-css-extended a:focus {
-    font-weight: bold;
-}
+.user-css-presentation .user-css-extended a:focus {}
 
 /* I don't know why this is needed but apparently I broke article-panel and need to do this to fix it */
 
@@ -275,7 +273,6 @@
     font-family: Fira Sans, sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530);
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530);
 }
@@ -289,6 +286,8 @@
     letter-spacing: 0.4px;
     border-bottom: 2.5px solid;
     margin-top: 25px;
+    -webkit-animation: fade-in-right 0.9s ease-in;
+    animation: fade-in-right 0.9s ease-in;
 }
 
 .user-css-presentation .user-css h3,
@@ -301,6 +300,8 @@
     margin-top: 15px;
     margin-bottom: 6px;
     border-bottom: 1.5px solid;
+    -webkit-animation: fade-in-left 0.9s ease-in;
+    animation: fade-in-left 0.9s ease-in;
 }
 
 .user-css-presentation .user-css h4,
@@ -559,9 +560,6 @@
     border: none;
     border-radius: 0 3px 3px 0;
     color: var(--primary5);
-    -webkit-text-fill-color: black;
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: white;
 }
 
 .user-css-presentation .user-css-extended .comment-box {
@@ -762,6 +760,120 @@
     min-height: 100px;
 }
 
+/*=============================================
+=            TRIANGLE BREADCRUMB            =
+=============================================*/
+
+.user-css-presentation .user-css .breadcrumb2 {
+    list-style: none;
+    overflow: hidden;
+    font-size: 85%;
+    padding: 0;
+}
+
+.user-css-presentation .user-css .breadcrumb2 li {
+    float: left;
+}
+
+.user-css-presentation .user-css .breadcrumb2 li a {
+    text-decoration: none;
+    padding: 10px 0 10px 55px;
+    background: var(--primary5Transparent);
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.user-css-presentation .user-css .breadcrumb2 li a:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid hsla(34, 85%, 35%, 1);
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+}
+
+.user-css-presentation .user-css .breadcrumb2 li a:before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid white;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1;
+}
+
+.user-css-presentation .user-css .breadcrumb2 li:first-child a {
+    padding-left: 10px;
+}
+
+.user-css-presentation .user-css .breadcrumb2 li:nth-child(2) a {
+    background: hsla(34, 85%, 45%, 1);
+}
+
+.user-css-presentation .user-css .breadcrumb2 li:nth-child(2) a:after {
+    border-left-color: hsla(34, 85%, 45%, 1);
+}
+
+.user-css-presentation .user-css .breadcrumb2 li:nth-child(3) a {
+    background: hsla(34, 85%, 55%, 1);
+}
+
+.user-css-presentation .user-css .breadcrumb2 li:nth-child(3) a:after {
+    border-left-color: hsla(34, 85%, 55%, 1);
+}
+
+.user-css-presentation .user-css .breadcrumb2 li:nth-child(4) a {
+    background: hsla(34, 85%, 65%, 1);
+}
+
+.user-css-presentation .user-css .breadcrumb2 li:nth-child(4) a:after {
+    border-left-color: hsla(34, 85%, 65%, 1);
+}
+
+.user-css-presentation .user-css .breadcrumb2 li:nth-child(5) a {
+    background: hsla(34, 85%, 75%, 1);
+}
+
+.user-css-presentation .user-css .breadcrumb2 li:nth-child(5) a:after {
+    border-left-color: hsla(34, 85%, 75%, 1);
+}
+
+.user-css-presentation .user-css .breadcrumb2 li:last-child a {
+    background: transparent !important;
+    color: black;
+    pointer-events: none;
+    cursor: default;
+}
+
+.user-css-presentation .user-css .breadcrumb2 li:last-child a:after {
+    border: 0;
+}
+
+.user-css-presentation .user-css .breadcrumb2 li a:hover {
+    background: hsla(34, 85%, 25%, 1);
+}
+
+.user-css-presentation .user-css .breadcrumb2 li a:hover:after {
+    border-left-color: hsla(34, 85%, 25%, 1) !important;
+}
+
+/*=====  End of TRIANGLE BREADCRUMB  ======*/
+
 /*----------  RPG Panel  ----------*/
 
 .user-css-presentation .user-css .rpgpanel {
@@ -791,7 +903,7 @@
     line-height: 1.07em;
     color: #B7ABA8;
     text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.78);
-    background: var(--primary6Transparent);
+    background: var(--primary4);
 }
 
 .user-css-presentation .user-css .pquoteright,
@@ -1072,6 +1184,8 @@
 .user-css-presentation .user-css-worldmenu .worldmenu-inner {
     background-color: var(--default3Transparent);
     color: var(--defaultDMuted);
+    border: 1px solid;
+    border-color: var(--primary4);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -1089,7 +1203,8 @@
 .user-css-presentation .user-css-extended h1,
 .user-css-presentation .user-css h1 a {
     color: var(--primaryA);
-    background: linear-gradient(var(--accentD), var(--default9), var(--accent4));
+    background: linear-gradient(var(--accent1Muted), var(--primary3Muted), var(--default4Muted));
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1111,7 +1226,7 @@
 
 .user-css-presentation .user-css h2,
 .user-css-presentation .user-css-extended h2 {
-    color: var(--primary5Muted);
+    color: var(--primary8Muted);
 }
 
 .user-css-presentation .user-css h2 small,
@@ -1126,7 +1241,7 @@
 
 .user-css-presentation .user-css h3 small,
 .user-css-presentation .user-css-extended h3 small {
-    color: var(--primary5Muted);
+    color: var(--primary8Muted);
 }
 
 .user-css-presentation .user-css h4,
@@ -1184,15 +1299,15 @@
 }
 
 .user-css-presentation .user-css .backtoworld a {
-    background: var(--accent9Transparent);
+    background: var(--accent5);
     box-shadow: 2px 2px 1px 1.5px var(--accent1Transparent);
-    color: var(--primary5);
+    color: var(--defaultAMuted);
 }
 
 .user-css-presentation .user-css .backtoworld a:hover {
     background: var(--primaryDTransparent);
     box-shadow: 0 0 1px 2px var(--primaryDTransparent);
-    color: var(--primary3);
+    color: var(--accent6Muted);
     transition: all 0.3s ease;
 }
 
@@ -1327,6 +1442,8 @@
 .user-css-presentation .user-css .breadcrumb li .active {
     color: var(--accent1Muted);
 }
+
+/*=====  End of BREADCRUMBS  ======*/
 
 /* BUTTONS */
 
@@ -1502,14 +1619,14 @@
 .user-css-presentation .user-css .nav-tabs li.active a,
 .user-css-presentation .user-css-extended .nav-tabs li.active a {
     background: var(--primaryD);
-    border-color: var(--primaryD);
-    color: var(--primary3Muted);
+    border-color: var(--accentDTransparent);
+    color: var(--accentA);
     box-shadow: 0 0 1px 1px var(--primaryDTransparent);
 }
 
 .user-css-presentation .user-css .menu-control,
 .user-css-presentation .user-css-extended .menu-control {
-    background-color: var(--primaryATransparent);
+    background-color: var(--primary4Muted);
     color: var(--primaryD);
     box-shadow: 0 0 1px 2px var(--primaryATransparent);
 }
@@ -2567,6 +2684,80 @@
         transform: scaleX(1);
         -webkit-transform-origin: 100% 100%;
         transform-origin: 100% 100%;
+        opacity: 1;
+    }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-9-27 22:22:58
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in-left
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes fade-in-left {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-left {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-9-27 22:24:13
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in-right
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes fade-in-right {
+    0% {
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-right {
+    0% {
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
         opacity: 1;
     }
 }
