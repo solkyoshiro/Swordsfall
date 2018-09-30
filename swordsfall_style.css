@@ -88,7 +88,7 @@
 /*=====  End of FONT CHANGES  ======*/
 
 /*=============================================
-=            LAYOUT - MAIN            =
+=  ANCHOR    LAYOUT - MAIN            =
 =============================================*/
 
 .user-css-presentation .user-css.page,
@@ -118,7 +118,7 @@
 /*=====  End of LAYOUT - MAIN  ======*/
 
 /*=============================================
-=            BOOK COVER CHANGES            =
+=   ANCHOR         BOOK COVER CHANGES            =
 =============================================*/
 
 .user-css-presentation .user-css .bookcover {
@@ -161,7 +161,7 @@
 /*=====  End of BOOK COVER CHANGES  ======*/
 
 /*=============================================
-=            lAYOUT -HTML            =
+= anchor           LAYOUT -HTML            =
 =============================================*/
 
 .user-css-presentation .user-css a,
@@ -199,7 +199,7 @@
 /*----------  End of Bold Font  ----------*/
 
 /*=============================================
-=            BLOCKQUOTE            =
+= anchor           BLOCKQUOTE            =
 =============================================*/
 
 .user-css-presentation .user-css blockquote,
@@ -239,7 +239,7 @@
 /*=====  End of End of Blockquote  ======*/
 
 /*=============================================
-=            CODE CHANGES            =
+= anchor        CODE CHANGES            =
 =============================================*/
 
 .user-css-presentation .user-css code,
@@ -263,7 +263,7 @@
 /*=====  End of DESCRIPTION LIST  ======*/
 
 /*=============================================
-=          HEADER TEXT CHANGES            =
+=    anchor      HEADER TEXT CHANGES            =
 =============================================*/
 
 .user-css-presentation .user-css h1,
@@ -340,7 +340,7 @@
 }
 
 /*=============================================
-=            IMAGE THUMBNAIL            =
+=  anchor          IMAGE THUMBNAIL            =
 =============================================*/
 
 .user-css-presentation .user-css .user-css-presentation .user-css-image-thumbnail,
@@ -360,7 +360,7 @@
 /*=====  End of IMAGE THUMBNAIL  ======*/
 
 /*=============================================
-=            PARAGRAPH TEXT            =
+= anchor           PARAGRAPH TEXT            =
 =============================================*/
 
 .user-css-presentation .user-css p,
@@ -382,7 +382,11 @@
 
 /*=====  End of lAYOUT -HTML  ======*/
 
-/* LAYOUT - BOOTSTRAP CLASSES */
+/*=============================================
+=       anchor BOOTSTRAP CLASSES            =
+=============================================*/
+
+/*----------  ALERT  ----------*/
 
 .user-css-presentation .alert {
     border-radius: 4px;
@@ -410,12 +414,16 @@
     transform-origin: 0 0;
 }
 
+/*----------  BUTTON  ----------*/
+
 .user-css-presentation .user-css .btn,
 .user-css-presentation .user-css-extended .btn {
     border: none !important;
     border-radius: 3px;
     margin: 2px 1px;
 }
+
+/*----------  BREADCRUMB  ----------*/
 
 .user-css-presentation .user-css .breadcrumb {
     font-size: 80%;
@@ -426,16 +434,22 @@
     display: inline-block;
 }
 
+/*----------  SPOILER BUTTON  ----------*/
+
 .user-css-presentation .user-css .spoiler-button,
 .user-css-presentation .user-css-extended .spoiler-button {
     margin-bottom: 10px;
 }
+
+/*----------  LABEL  ----------*/
 
 .user-css-presentation .user-css .label,
 .user-css-presentation .user-css-extended .label {
     border: none;
     border-radius: 3px;
 }
+
+/*----------  NAVIGATION TABS  ----------*/
 
 .user-css-presentation .user-css .nav-tabs,
 .user-css-presentation .user-css-extended .nav-tabs {
@@ -458,9 +472,13 @@
     border-bottom: none;
 }
 
+/*=====  End of Bootstap Classes  ======*/
+
 /*=============================================
-=            SIDE PANEL CHANGES            =
+= anchor      PANEL CHANGES            =
 =============================================*/
+
+/*----------  PANEL  ----------*/
 
 .user-css-presentation .user-css .panel,
 .user-css-presentation .user-css-extended .panel {
@@ -469,6 +487,8 @@
     border-radius: 5px;
     padding: 3px 5px;
 }
+
+/*----------  PANEL HEADING  ----------*/
 
 .user-css-presentation .user-css .panel-heading,
 .user-css-presentation .user-css-extended .panel-heading {
@@ -484,7 +504,11 @@
     border: none;
 }
 
-/*=====  End of SIDE PANEL CHANGES  ======*/
+/*=====  End of PANEL CHANGES  ======*/
+
+/*=============================================
+= ANCHOR        TABLE CHANGES            =
+=============================================*/
 
 .user-css-presentation .user-css .table {
     border: none;
@@ -509,14 +533,20 @@
     border-radius: 4px;
 }
 
+/*=====  End of TABLE CHANGES  ======*/
+
 /*=============================================
-=            LAYOUT - WORLDANVIL CLASSES            =
+= ANCHOR   LAYOUT - WORLDANVIL CLASSES       =
 =============================================*/
+
+/*----------  ALOUD  ----------*/
 
 .user-css-presentation .user-css .aloud {
     border-radius: 4px;
     border: none;
 }
+
+/*----------  ARTIST CREDITS  ----------*/
 
 .user-css-presentation .user-css .artist-credits,
 .user-css-presentation .user-css-extended .artist-credits {
@@ -525,6 +555,8 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*----------  ARTIST CREDITS IMAGE THUMBNAIL  ----------*/
+
 .user-css-presentation .user-css .user-css-presentation .user-css-image-thumbnail .artist-credits,
 .user-css-presentation .user-css-extended .user-css-presentation .user-css-image-thumbnail .artist-credits {
     padding: 10px 20px;
@@ -532,12 +564,16 @@
     border-radius: 0 0 5px 5px;
 }
 
+/*----------  TEXT ABBREVIATION  ----------*/
+
 .user-css-presentation .user-css .text-abbreviation,
 .user-css-presentation .user-css-extended .text-abbreviation {
     text-decoration: underline dashed;
     border: none;
     display: inline-block;
 }
+
+/*----------  ARTICLE PANEL  ----------*/
 
 .user-css-presentation .user-css .article-panel,
 .user-css-presentation .user-css-extended .article-panel {
@@ -554,6 +590,8 @@
     height: 100%;
 }
 
+/*----------  BACK TO WORLD  ----------*/
+
 .user-css-presentation .user-css .backtoworld a {
     text-transform: uppercase;
     font-size: 10.5px;
@@ -561,6 +599,8 @@
     border-radius: 0 3px 3px 0;
     color: var(--primary5);
 }
+
+/*----------  COMMENT BOX  ----------*/
 
 .user-css-presentation .user-css-extended .comment-box {
     border: none;
@@ -572,10 +612,14 @@
     font-size: 1.2em;
 }
 
+/*----------  COVER  ----------*/
+
 .user-css-presentation .user-css .cover,
 .user-css-presentation .user-css .cover img {
     border-radius: 5px 5px 0 0;
 }
+
+/*----------  DROPCAP  ----------*/
 
 .user-css-presentation .user-css .dropcap,
 .user-css-presentation .user-css-extended .dropcap {
@@ -585,6 +629,8 @@
 .user-css-presentation .user-css-extended .comment-box .line-spacer {
     display: box;
 }
+
+/*----------  MAP BOX  ----------*/
 
 .user-css-presentation .user-css .map-box {
     border-radius: 5px;
@@ -606,6 +652,8 @@
     margin: 0;
 }
 
+/*----------  MENU CONTROL  ----------*/
+
 .user-css-presentation .user-css .menu-control,
 .user-css-presentation .user-css-extended .menu-control {
     border: none;
@@ -620,6 +668,8 @@
     padding-top: 10px;
 }
 
+/*----------  RELATION  ----------*/
+
 .user-css-presentation .user-css .relation:first-child {
     border-top: none;
 }
@@ -629,6 +679,8 @@
     border-radius: 3px;
     margin-bottom: 5px;
 }
+
+/*----------  SECRETS  ----------*/
 
 .user-css-presentation .user-css-secret {
     border: none;
@@ -645,6 +697,8 @@
     padding: 0;
 }
 
+/*----------  STAT BLOCK  ----------*/
+
 .user-css-presentation .user-css .statblock,
 .user-css-presentation .user-css-extended .statblock {
     margin-bottom: 20px;
@@ -653,11 +707,13 @@
     padding: 3px 5px;
 }
 
-/* Temporary hotfix for character shete readability */
+/* Temporary hotfix for character sheet readability */
 
 .user-css-presentation .user-css .character-sheet {
     color: black;
 }
+
+/*----------  LABEL  ----------*/
 
 .user-css-presentation .user-css .label,
 .user-css-presentation .user-css-extended .label {
@@ -672,6 +728,8 @@
     border-radius: 3px;
 }
 
+/*----------  TIMELINE PANEL  ----------*/
+
 .user-css-presentation .user-css .timeline li .timeline-panel,
 .user-css-presentation .user-css-extended .timeline li .timeline-panel {
     border-bottom: none;
@@ -685,6 +743,8 @@
     padding: 12.5px;
 }
 
+/*----------  TOOLTIP  ----------*/
+
 .user-css-presentation .user-css .tooltip {
     opacity: 1 !important;
 }
@@ -694,6 +754,8 @@
     border: none;
     border-radius: 4px;
 }
+
+/*----------  USER BOX  ----------*/
 
 .user-css-presentation .user-css .user-box,
 .user-css-presentation .user-css-extended .user-box {
@@ -716,7 +778,7 @@
 }
 
 /*=============================================
-=            LAYOUT - CUSTOM CLASSES            =
+= ANCHOR    LAYOUT - CUSTOM CLASSES            =
 =============================================*/
 
 /*----------  BLOCK  ----------*/
@@ -761,7 +823,7 @@
 }
 
 /*=============================================
-=            TRIANGLE BREADCRUMB            =
+= ANCHOR      TRIANGLE BREADCRUMB            =
 =============================================*/
 
 .user-css-presentation .user-css .breadcrumb2 {
@@ -1277,7 +1339,11 @@
 /* HORIZONTAL RULES */
 
 .user-css-presentation .user-css hr {
-    border-color: var(--accentA);
+    border: 1px solid var(--accentATransparent);
+}
+
+.user-css-presentation .user-css hr wide {
+    border: 4px solid var(--accentA);
 }
 
 /* LINKS */
