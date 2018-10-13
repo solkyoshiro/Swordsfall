@@ -331,13 +331,20 @@
     margin-bottom: 0;
 }
 
-/*=====  End of HEADER CHANGES  ======*/
+/*----------  RELATIONSHIP HEADER  ----------*/
 
-.user-css-presentation .user-css img,
-.user-css-presentation .user-css-extended img {
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.23), 1px 0px 10px 0 rgba(0, 0, 0, 0.10);
+.user-css-presentation .user-css .character-relationships h3 {
+    font-size: 30px;
+    font-family: Fira Sans2, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    border-bottom: 2.5px solid;
+    margin-top: 25px;
+    color: var(--primary8Muted);
 }
+
+/*=====  End of HEADER CHANGES  ======*/
 
 /*=============================================
 =  anchor          IMAGE THUMBNAIL            =
@@ -354,6 +361,12 @@
 .user-css-presentation .user-css .user-css-presentation .user-css-image-thumbnail img,
 .user-css-presentation .user-css-extended .user-css-presentation .user-css-image-thumbnail img {
     border-radius: 5px 5px 0 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.23), 1px 0px 10px 0 rgba(0, 0, 0, 0.10);
+}
+
+.user-css-presentation .user-css img,
+.user-css-presentation .user-css-extended img {
+    border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.23), 1px 0px 10px 0 rgba(0, 0, 0, 0.10);
 }
 
@@ -525,6 +538,10 @@
 .user-css-presentation .user-css .table th {
     border: none;
     word-break: keep-all;
+    -ms-hyphens: none;
+    -moz-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
 }
 
 .user-css-presentation .user-css .well,
@@ -822,6 +839,15 @@
     min-height: 100px;
 }
 
+/*----------  ANCHOR FLAG WAVE  ----------*/
+
+.flagwave {
+    animation: shadow 2.5s infinite;
+    transform-origin: left top;
+}
+
+/*=====  End of FLAG WAVE  ======*/
+
 /*=============================================
 = ANCHOR      TRIANGLE BREADCRUMB            =
 =============================================*/
@@ -947,7 +973,7 @@
 /*=====  End of RPG Panel  ======*/
 
 /*=============================================
-=            PULLDOWN QUOTE            =
+= ANCHOR        PULLDOWN QUOTE            =
 =============================================*/
 
 .user-css-presentation .user-css .pquoteright,
@@ -993,7 +1019,7 @@
 /*=====  End of END OF LAYOUT - CUSTOM CLASSES  ======*/
 
 /*=============================================
-=            BORDER GROUP            =
+=  ANCHOR     BORDER GROUP            =
 =============================================*/
 
 .user-css-presentation .user-css .row-border-group .user-row {
@@ -1216,7 +1242,7 @@
 /*=====  End of END OF BORDER GROUP  ======*/
 
 /*=============================================
-=            THEME APPLICATION            =
+=  ANCHOR     THEME APPLICATION            =
 =============================================*/
 
 .user-css-presentation {
@@ -1257,8 +1283,20 @@
     box-shadow: 0 0 11px 2px var(--primary3Transparent);
 }
 
+/* Comment Transparencey */
+
+/*
+.user-css-presentation .user-css-extended .page {
+    background: url(https://www.worldanvil.com/uploads/images/7773639289dd543538b442061db03891.png);
+    background: linear-gradient(to right, var(--primary3), var(--accent3), var(--default1), var(--default1), var(--default1), var(--accent3), var(--primary3));
+    background-position-y: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+*/
+
 /*=============================================
-=            HEADINGS COLOR            =
+=  ANCHOR       HEADINGS COLOR            =
 =============================================*/
 
 .user-css-presentation .user-css h1,
@@ -2477,7 +2515,7 @@
     color: #ca5555;
 }
 
-/* Color Theme: Default (WA public) */
+/*ANCHOR Color Theme: Default (WA public) */
 
 .user-css-presentation .user-css,
 .user-css-presentation .user-css-extended {
@@ -2485,7 +2523,7 @@
     --default1: #151314;
     --default2: #242022;
     --default3: #332D30;
-    --default4: #3D363A;
+    --default4: #3d363a;
     --default5: #473F43;
     --default6: #50484C;
     --default7: #5A5056;
@@ -2513,7 +2551,7 @@
     --default1Transparent: rgba(21, 19, 20, 0.5);
     --default2Transparent: rgba(36, 32, 34, 0.5);
     --default3Transparent: rgba(51, 45, 48, 0.5);
-    --default4Transparent: rgba(51, 45, 48, 0.5);
+    --default4Transparent: rgba(61, 54, 58, 0.5);
     --default5Transparent: rgba(71, 63, 67, 0.5);
     --default6Transparent: rgba(80, 72, 76, 0.5);
     --default7Transparent: rgba(90, 80, 86, 0.5);
@@ -2624,7 +2662,7 @@
 }
 
 /*=============================================
-=            KEYFRAME ANIMATIONS            =
+= ANCHOR           KEYFRAME ANIMATIONS            =
 =============================================*/
 
 /* ----------------------------------------------
@@ -2825,6 +2863,21 @@
         -webkit-transform: translateX(0);
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+@keyframes shadow {
+    0% {
+        filter: drop-shadow(2px 3px 7px rgba(0, 0, 0, .7));
+        transform: rotateX(0deg) matrix3d( 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    50% {
+        filter: drop-shadow(3px 3px 16px rgba(0, 0, 0, .5));
+        transform: rotateX(10deg) matrix3d( 0.9829214561476214, 0, 0, -0.00003271751695857963, 0, 0.9962483913887495, 0, -0.000021811677972386414, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    100% {
+        filter: drop-shadow(2px 3px 7px rgba(0, 0, 0, .7));
+        transform: rotateX(0deg) matrix3d( 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     }
 }
 
