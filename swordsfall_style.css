@@ -113,7 +113,27 @@
     display: none;
 }
 
-/*----------  NO AUTO LINE SPACES  ----------*/
+/*----------  END AUTO LINE SPACES  ----------*/
+
+/*=============================================
+= ANCHOR       Article Content            =
+=============================================*/
+
+.user-css-presentation .user-css .article-content .col-md-8 {
+    padding-left: 15px;
+}
+
+.user-css-presentation .user-css .article-content .col-md-4 {
+    padding-right: 10px;
+    padding-left: 15px;
+}
+
+.user-css-presentation .user-css .article-content div .col-md-12 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*=====  End of ARTICLE CONTENT  ======*/
 
 /*=====  End of LAYOUT - MAIN  ======*/
 
@@ -256,12 +276,6 @@
 
 /*=====  End of Weird thing  ======*/
 
-/*----------  FIX FOR BACKGROUND  ----------*/
-
-#full-layout div.user-css-viewer {
-    background: none;
-}
-
 /*----------  Bold Font  ----------*/
 
 .user-css-presentation .user-css b,
@@ -288,6 +302,9 @@
     font-family: Shadows Into Light, sans-serif;
     font-size: 20px;
     letter-spacing: 0.5px;
+    padding: 20px;
+    margin: 10px;
+    line-height: 1.5em;
 }
 
 .user-css-presentation .user-css blockquote .author,
@@ -295,6 +312,7 @@
     font-size: 16px;
     font-family: Montserrat, sans-serif;
     letter-spacing: -0.6px;
+    padding-right: 0px;
 }
 
 .user-css-presentation .user-css blockquote:before {
@@ -344,11 +362,21 @@
 =    ANCHOR       HEADER TEXT CHANGES            =
 =============================================*/
 
+.user-css-presentation .user-css .article-title h1 {
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.user-css-presentation .user-css .article-subheading {
+    padding-left: 0px;
+}
+
 .user-css-presentation .user-css h1,
 .user-css-presentation .user-css-extended h1,
 .user-css-presentation .user-css h1 a {
     font-size: 57px;
     font-family: Fira Sans, sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530);
@@ -372,6 +400,7 @@
 .user-css-presentation .user-css-extended h3 {
     font-size: 24px;
     font-family: Fira Sans3, sans-serif;
+    font-weight: 300;
     letter-spacing: -1px;
     text-transform: uppercase;
     padding-bottom: 1.4px;
@@ -386,6 +415,7 @@
 .user-css-presentation .user-css-extended h4 {
     font-family: Fira Sans3, sans-serif;
     font-size: 20px;
+    font-weight: 300;
     text-transform: uppercase;
     margin-top: 10px;
     margin-bottom: 0;
@@ -395,6 +425,7 @@
 .user-css-presentation .user-css-extended h5 {
     font-family: Fira Sans3, sans-serif;
     font-size: 16px;
+    font-weight: 300;
     text-transform: uppercase;
     margin-top: 5px;
     margin-bottom: 0;
@@ -552,6 +583,9 @@
 .user-css-presentation .user-css-extended .nav-tabs li a,
 .user-css-presentation .user-css .nav-tabs li a:hover,
 .user-css-presentation .user-css-extended .nav-tabs li a:hover {
+    font-family: Roboto Condensed, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
     border-radius: 4px 4px 0 0;
     margin: 3px 3px 0 3px;
     border: none;
@@ -602,6 +636,8 @@
 =============================================*/
 
 .user-css-presentation .user-css .table {
+    background: none;
+    font-family: inherit;
     border: none;
     border-collapse: collapse;
     border-radius: 7px;
@@ -676,6 +712,7 @@
     border-radius: 5px;
     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.3), 4px 7px 20px 0 rgba(0, 0, 0, 0.22);
     padding: 0;
+    margin-bottom: 0px;
 }
 
 .user-css-presentation .user-css .article-panel a,
@@ -685,11 +722,29 @@
     height: 100%;
 }
 
+.user-css-presentation .user-css .article-panel .heading {
+    text-align: left;
+}
+
+.user-css-presentation .user-css .article-panel .details {
+    text-align: left;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
 /*----------  BACK TO WORLD  ----------*/
 
 .user-css-presentation .user-css .backtoworld a {
     text-transform: uppercase;
+    font-family: Roboto Condensed, sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: -16px;
+    padding: 7px 10px;
+    padding-left: 13px;
+    left: -20px;
     font-size: 10.5px;
+    z-index: 2;
     border: none;
     border-radius: 0 3px 3px 0;
     color: var(--primary5);
@@ -707,6 +762,15 @@
     font-size: 1.2em;
 }
 
+.user-css-presentation .user-css-extended .comment-box-author {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.user-css-presentation .user-css-extended .comment-box .comment-box-author {
+    font-weight: normal;
+}
+
 /*----------  COVER  ----------*/
 
 .user-css-presentation .user-css .cover,
@@ -719,6 +783,8 @@
 .user-css-presentation .user-css .dropcap,
 .user-css-presentation .user-css-extended .dropcap {
     font-family: Fira Sans3;
+    font-weight: normal;
+    padding-right: 0px;
 }
 
 .user-css-presentation .user-css-extended .comment-box .line-spacer {
@@ -764,6 +830,10 @@
 }
 
 /*----------  RELATION  ----------*/
+
+.user-css-presentation .user-css .relation {
+    border-top: 1px solid;
+}
 
 .user-css-presentation .user-css .relation:first-child {
     border-top: none;
