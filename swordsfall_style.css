@@ -133,6 +133,14 @@
     padding-right: 15px;
 }
 
+.user-css-presentation .user-css .col-md-7 {
+    width: 66.66666667%;
+}
+
+.user-css-presentation .user-css .col-md-5 {
+    width: 33.33333333%;
+}
+
 /*=====  End of ARTICLE CONTENT  ======*/
 
 /*=====  End of LAYOUT - MAIN  ======*/
@@ -353,7 +361,7 @@
 =============================================*/
 
 .user-css-presentation .user-css .panel dl {
-    margin-bottom: 0;
+    margin-bottom: -5px;
 }
 
 /*=====  End of DESCRIPTION LIST  ======*/
@@ -385,13 +393,14 @@
 
 .user-css-presentation .user-css h2,
 .user-css-presentation .user-css-extended h2 {
-    font-size: 30px;
-    font-family: Fira Sans2, sans-serif;
+    font-size: 35px;
+    font-family: Fira Sans, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.4px;
-    border-bottom: 2.5px solid;
+    letter-spacing: 0.5px;
+    border-bottom: 5px solid;
     margin-top: 25px;
+    margin-bottom: 0px;
     -webkit-animation: fade-in-right 0.9s ease-in;
     animation: fade-in-right 0.9s ease-in;
 }
@@ -712,7 +721,7 @@
     border-radius: 5px;
     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.3), 4px 7px 20px 0 rgba(0, 0, 0, 0.22);
     padding: 0;
-    margin-bottom: 0px;
+    margin-bottom: 12px;
 }
 
 .user-css-presentation .user-css .article-panel a,
@@ -722,12 +731,7 @@
     height: 100%;
 }
 
-.user-css-presentation .user-css .article-panel .heading {
-    text-align: left;
-}
-
 .user-css-presentation .user-css .article-panel .details {
-    text-align: left;
     padding-top: 0px;
     padding-left: 0px;
 }
@@ -784,7 +788,7 @@
 .user-css-presentation .user-css-extended .dropcap {
     font-family: Fira Sans3;
     font-weight: normal;
-    padding-right: 0px;
+    padding-right: 5px;
 }
 
 .user-css-presentation .user-css-extended .comment-box .line-spacer {
@@ -826,7 +830,12 @@
 
 .user-css-presentation .user-css .phrase-key {
     display: block;
-    padding-top: 10px;
+    padding-top: 2px;
+}
+
+.user-css-presentation .user-css .phrase-key,
+.phrase-value {
+    padding-bottom: 1px;
 }
 
 /*----------  RELATION  ----------*/
@@ -1475,6 +1484,10 @@
 .user-css-presentation .user-css h2,
 .user-css-presentation .user-css-extended h2 {
     color: var(--primary8Muted);
+    background: linear-gradient(var(--primaryDMuted), var(--primary6Muted), var(--primary9));
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .user-css-presentation .user-css h2 small,
