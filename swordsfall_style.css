@@ -107,6 +107,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.user-css .world-title {
+    display: none;
+}
+
+.heading p.subheading {
+    font-family: Roboto Condensed, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
 /*----------  NO AUTO LINE SPACES  ----------*/
 
 .user-css-presentation .line-spacer {
@@ -400,7 +412,6 @@
     letter-spacing: 0.5px;
     border-bottom: 5px solid;
     margin-top: 25px;
-    margin-bottom: 0px;
     -webkit-animation: fade-in-right 0.9s ease-in;
     animation: fade-in-right 0.9s ease-in;
 }
@@ -1963,10 +1974,10 @@
 
 .user-css-presentation .user-css .panel-primary,
 .user-css-presentation .user-css-extended .panel-primary {
-    background-color: var(--primary3Transparent);
-    border-color: var(--primaryDTransparent);
+    background-color: var(--primary2Transparent);
+    border-color: var(--primary3Muted);
     color: var(--primaryDMuted);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 5px 7px 19px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .user-css-presentation .user-css .panel-primary .panel-heading,
